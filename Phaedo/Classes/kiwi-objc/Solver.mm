@@ -1,7 +1,7 @@
 #import "Solver.h"
 #import "Constraint.h"
 #import "Variable.h"
-#import "kiwi/kiwi.h"
+#import "../kiwi/kiwi.h"
 
 @implementation Solver
 

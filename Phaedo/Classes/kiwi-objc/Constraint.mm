@@ -1,6 +1,6 @@
 #import "Expression.h"
 #import "Constraint.h"
-#import "kiwi/kiwi.h"
+#import "../kiwi/kiwi.h"
 
 @interface Constraint () {
 @private

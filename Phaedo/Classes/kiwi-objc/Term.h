@@ -3,7 +3,7 @@
 #import "Variable.h"
 
 #ifdef __cplusplus
-#import "kiwi/kiwi.h"
+#import "../kiwi/kiwi.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

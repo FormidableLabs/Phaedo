@@ -1,6 +1,6 @@
 #import "Expression.h"
 #import "Term.h"
-#import "kiwi/kiwi.h"
+#import "../kiwi/kiwi.h"
 
 @interface Expression () {
 @private

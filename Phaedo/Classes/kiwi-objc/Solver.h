@@ -6,7 +6,7 @@
 #import "Constraint.h"
 
 #ifdef __cplusplus
-#import "kiwi/kiwi.h"
+#import "../kiwi/kiwi.h"
 #endif
 
 
