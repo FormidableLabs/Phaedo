@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/Phaedo.svg?style=flat)](http://cocoapods.org/pods/Phaedo)
 [![Platform](https://img.shields.io/cocoapods/p/Phaedo.svg?style=flat)](http://cocoapods.org/pods/Phaedo)
 
+## Docs WIP!
+
+Phaedo is a speedy linear constraint solver for Swift.
+
+Phaedo wraps the [Kiwi](https://github.com/nucleic/kiwi) constraint solver (C++) in a thin layer of Objective-C, then adds operator overloads in Swift for intuitive constraint definitions.
+
+Instances of Phaedo solvers aren't constrained to the UI thread, opening the door for parallel constraint layout. Phaedo's ultimate goal is to form the foundation of a multithreaded replacement for AutoLayout that works in both Swift and React Native.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 

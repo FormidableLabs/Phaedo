@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint Phaedo.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Phaedo'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Phaedo.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A speedy constraints solver for Swift.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Phaedo is a speedy linear constraint solver for Swift. Phaedo wraps the
+Kiwi constraint solver (C++) in a thin layer of Objective-C, then adds
+operator overloads in Swift for intuitive constraint definitions.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Phaedo'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/FormidableLabs/Phaedo'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tyler Thompson' => 'tyler.thompson@formidable.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Phaedo.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/FormidableLabs/Phaedo.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/tptee'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Phaedo/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Phaedo' => ['Phaedo/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

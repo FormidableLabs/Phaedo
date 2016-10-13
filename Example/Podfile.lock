@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (5.0.0)
+  - Phaedo (0.1.0)
+  - Quick (0.10.0)
+
+DEPENDENCIES:
+  - Nimble (~> 5.0)
+  - Phaedo (from `../`)
+  - Quick (~> 0.10)
+
+EXTERNAL SOURCES:
+  Phaedo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Phaedo: d5fe94791a7b6662f533ab83e2fd6699cafcd6c9
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+
+PODFILE CHECKSUM: 4f1f101378a0cb3a53c1637ebaf35e2e14f72567
+
+COCOAPODS: 1.1.0.rc.3
