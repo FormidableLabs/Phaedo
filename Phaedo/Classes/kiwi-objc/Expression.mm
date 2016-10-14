@@ -1,45 +1,41 @@
 #import "Expression.h"
-#import "Term.h"
 #import "../kiwi/kiwi.h"
+#import "Term.h"
 
 @interface Expression () {
-@private
+ @private
   NSArray<Term *> *_terms;
 }
 @end
 
 @implementation Expression
 
-- (instancetype)initWithConstant:(double)constant
-{
+- (instancetype)initWithConstant:(double)constant {
   if (self = [super init]) {
     impl = new kiwi::Expression(constant);
   }
   return self;
 }
 
-- (instancetype)initWithTerm:(Term *)term
-{
+- (instancetype)initWithTerm:(Term *)term {
   if (self = [super init]) {
-    _terms = @[term];
+    _terms = @[ term ];
 
     impl = new kiwi::Expression(*[term getImpl]);
   }
   return self;
 }
 
-- (instancetype)initWithTerm:(Term *)term constant:(double)constant
-{
+- (instancetype)initWithTerm:(Term *)term constant:(double)constant {
   if (self = [super init]) {
-    _terms = @[term];
+    _terms = @[ term ];
 
     impl = new kiwi::Expression(*[term getImpl], constant);
   }
   return self;
 }
 
-- (instancetype)initWithTerms:(NSArray<Term *> *)terms
-{
+- (instancetype)initWithTerms:(NSArray<Term *> *)terms {
   if (self = [super init]) {
     _terms = terms;
 
@@ -52,8 +48,8 @@
   return self;
 }
 
-- (instancetype)initWithTerms:(NSArray<Term *> *)terms constant:(double)constant
-{
+- (instancetype)initWithTerms:(NSArray<Term *> *)terms
+                     constant:(double)constant {
   if (self = [super init]) {
     _terms = terms;
 
@@ -66,8 +62,7 @@
   return self;
 }
 
-- (double)value
-{
+- (double)value {
   return impl->value();
 }
 
@@ -79,13 +74,11 @@
   return impl->constant();
 }
 
-- (kiwi::Expression *)getImpl
-{
+- (kiwi::Expression *)getImpl {
   return impl;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
   delete impl;
 }
 

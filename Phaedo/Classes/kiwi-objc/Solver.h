@@ -9,12 +9,11 @@
 #import "../kiwi/kiwi.h"
 #endif
 
-
 NS_ASSUME_NONNULL_BEGIN
 @interface Solver : NSObject {
-    #ifdef __cplusplus
-    kiwi::Solver *impl;
-    #endif
+#ifdef __cplusplus
+  kiwi::Solver *impl;
+#endif
 }
 
 - (instancetype)init;

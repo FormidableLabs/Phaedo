@@ -1,10 +1,18 @@
 osx_image: xcode8
 language: swift
+addons:
+  apt:
+    sources:
+      - llvm-toolchain-trusty-3.9
+    packages:
+      - clang-format-3.9
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
   - gem install cocoapods
   - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/Phaedo.xcworkspace -scheme Phaedo-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - clang-format -i Phaedo/Classes/kiwi-objc/*.{h,mm}
+  - git diff-index --quiet HEAD || echo "Formatting errors detected. Did you run clang-format?"
+  - set -o pipefail && xcodebuild test -workspace Example/Phaedo.xcworkspace -scheme Phaedo-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+  - pod lib lint
