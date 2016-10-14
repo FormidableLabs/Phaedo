@@ -1,6 +1,6 @@
 # Phaedo
 
-[![CI Status](http://img.shields.io/travis/Tyler Thompson/Phaedo.svg?style=flat)](https://travis-ci.org/Tyler Thompson/Phaedo)
+[![CI Status](http://img.shields.io/travis/Tyler Thompson/Phaedo.svg?style=flat)](https://travis-ci.org/FormidableLabs/Phaedo)
 [![Version](https://img.shields.io/cocoapods/v/Phaedo.svg?style=flat)](http://cocoapods.org/pods/Phaedo)
 [![License](https://img.shields.io/cocoapods/l/Phaedo.svg?style=flat)](http://cocoapods.org/pods/Phaedo)
 [![Platform](https://img.shields.io/cocoapods/p/Phaedo.svg?style=flat)](http://cocoapods.org/pods/Phaedo)
