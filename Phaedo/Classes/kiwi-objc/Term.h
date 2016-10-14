@@ -8,9 +8,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface Term : NSObject {
-    #ifdef __cplusplus
-    kiwi::Term *impl;
-    #endif
+#ifdef __cplusplus
+  kiwi::Term *impl;
+#endif
 }
 
 - (instancetype)initWithVariable:(Variable *)variable;

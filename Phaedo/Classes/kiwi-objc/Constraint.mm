@@ -1,9 +1,9 @@
-#import "Expression.h"
 #import "Constraint.h"
 #import "../kiwi/kiwi.h"
+#import "Expression.h"
 
 @interface Constraint () {
-@private
+ @private
   Relation _op;
   Strength _strength;
 }
@@ -11,8 +11,7 @@
 
 @implementation Constraint
 
-+ (kiwi::RelationalOperator)convertRelation:(Relation)relation
-{
++ (kiwi::RelationalOperator)convertRelation:(Relation)relation {
   switch (relation) {
     case EqualTo:
       return kiwi::RelationalOperator::OP_EQ;
@@ -23,8 +22,7 @@
   }
 }
 
-+ (Relation)convertOperator:(kiwi::RelationalOperator)op
-{
++ (Relation)convertOperator:(kiwi::RelationalOperator)op {
   switch (op) {
     case kiwi::RelationalOperator::OP_EQ:
       return EqualTo;
@@ -35,8 +33,7 @@
   }
 }
 
-+ (double)convertStrength:(Strength)strength
-{
++ (double)convertStrength:(Strength)strength {
   switch (strength) {
     case Required:
       return kiwi::strength::required;
@@ -50,66 +47,53 @@
 }
 
 - (instancetype)initWithExpression:(Expression *)expression
-                          operator:(Relation)relation
-{
+operator:(Relation)relation {
   if (self = [super init]) {
     _op = relation;
     _strength = Required;
-    impl = new kiwi::Constraint(
-                                *[expression getImpl],
+    impl = new kiwi::Constraint(*[expression getImpl],
                                 [Constraint convertRelation:_op],
-                                [Constraint convertStrength:_strength]
-                                );
+                                [Constraint convertStrength:_strength]);
   }
   return self;
 }
 
 - (instancetype)initWithExpression:(Expression *)expression
-                          operator:(Relation)relation
-                          strength:(Strength)strength
-{
+operator:(Relation)relation
+                          strength:(Strength)strength {
   if (self = [super init]) {
     _op = relation;
     _strength = strength;
-    impl = new kiwi::Constraint(
-                                *[expression getImpl],
+    impl = new kiwi::Constraint(*[expression getImpl],
                                 [Constraint convertRelation:_op],
-                                [Constraint convertStrength:_strength]
-                                );
+                                [Constraint convertStrength:_strength]);
   }
   return self;
 }
 
 - (instancetype)initWithOther:(Constraint *)constraint
-                     strength:(Strength)strength
-{
+                     strength:(Strength)strength {
   if (self = [super init]) {
     _strength = strength;
-    impl = new kiwi::Constraint(
-                                *[constraint getImpl],
-                                [Constraint convertStrength:_strength]
-                                );
+    impl = new kiwi::Constraint(*[constraint getImpl],
+                                [Constraint convertStrength:_strength]);
   }
   return self;
 }
 
-- (kiwi::Constraint *)getImpl
-{
+- (kiwi::Constraint *)getImpl {
   return impl;
 }
 
-- (Relation)op
-{
+- (Relation)op {
   return _op;
 }
 
-- (double)strength
-{
+- (double)strength {
   return _strength;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
   delete impl;
 }
 

@@ -1,10 +1,52 @@
+# Graciously borrowed from https://github.com/Alamofire/Alamofire/blob/master/.travis.yml
+language: objective-c
 osx_image: xcode8
-language: swift
-cache: cocoapods
-podfile: Example/Podfile
+
+env:
+  global:
+    - LC_CTYPE=en_US.UTF-8
+    - LANG=en_US.UTF-8
+    - WORKSPACE=Phaedo.xcworkspace
+    - IOS_FRAMEWORK_SCHEME="Phaedo"
+    - IOS_SDK=iphonesimulator10.0
+    - EXAMPLE_SCHEME="Phaedo-Example"
+  matrix:
+    - DESTINATION="OS=10.0,name=iPhone 7 Plus"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="YES"
+    - DESTINATION="OS=9.0,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO"
+
 before_install:
-  - gem install cocoapods
-  - pod install --project-directory=Example
+  - brew update
+  - brew install clang-format
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+
 script:
-- set -o pipefail && xcodebuild test -workspace Example/Phaedo.xcworkspace -scheme Phaedo-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+  - clang-format -i Phaedo/Classes/kiwi-objc/*.{h,mm}
+  - git diff-index --quiet HEAD || echo "Formatting errors detected. Did you run clang-format?"
+
+  # Build Framework in Debug and Run Tests if specified
+  - if [ $RUN_TESTS == "YES" ]; then
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty;
+    else
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    fi
+
+  # Build Framework in Release and Run Tests if specified
+  - if [ $RUN_TESTS == "YES" ]; then
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty;
+    else
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    fi
+
+  # Build Example in Debug if specified
+  - if [ $BUILD_EXAMPLE == "YES" ]; then
+      xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    fi
+
+  # Run `pod lib lint` if specified
+  - if [ $POD_LINT == "YES" ]; then
+      pod lib lint;
+    fi

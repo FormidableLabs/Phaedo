@@ -1,6 +1,8 @@
 use_frameworks!
 
 target 'Phaedo_Example' do
+  platform :ios, '9.0'
+
   pod 'Phaedo', :path => '../'
 
   target 'Phaedo_Tests' do

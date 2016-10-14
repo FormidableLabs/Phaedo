@@ -9,22 +9,17 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface Constraint : NSObject {
 #ifdef __cplusplus
-    kiwi::Constraint *impl;
+  kiwi::Constraint *impl;
 #endif
 }
 
 typedef NS_ENUM(NSInteger, Relation) {
-    EqualTo,
-    LessThanOrEqualTo,
-    GreaterThanOrEqualTo
+  EqualTo,
+  LessThanOrEqualTo,
+  GreaterThanOrEqualTo
 };
 
-typedef NS_ENUM(NSInteger, Strength) {
-    Required,
-    Strong,
-    Medium,
-    Weak
-};
+typedef NS_ENUM(NSInteger, Strength) { Required, Strong, Medium, Weak };
 
 #ifdef __cplusplus
 + (kiwi::RelationalOperator)convertRelation:(Relation)relation;
@@ -34,10 +29,10 @@ typedef NS_ENUM(NSInteger, Strength) {
 + (double)convertStrength:(Strength)strength;
 
 - (instancetype)initWithExpression:(Expression *)Expression
-                          operator:(Relation)Relation;
+operator:(Relation)Relation;
 
 - (instancetype)initWithExpression:(Expression *)Expression
-                          operator:(Relation)Relation
+operator:(Relation)Relation
                           strength:(Strength)strength;
 
 - (instancetype)initWithOther:(Constraint *)Constraint
