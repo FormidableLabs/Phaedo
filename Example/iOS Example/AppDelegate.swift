@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Phaedo
-//
-//  Created by Tyler Thompson on 10/12/2016.
-//  Copyright (c) 2016 Tyler Thompson. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

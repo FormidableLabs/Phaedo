@@ -17,12 +17,12 @@ operator overloads in Swift for intuitive constraint definitions.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Phaedo/Classes/**/*'
+  s.source_files = 'Source/**/*'
 
   # Any pure C++ headers need to be declared private or
   # `pod lib lint` will fail!
-  s.public_header_files = 'Phaedo/Classes/kiwi-objc/**/*.h'
-  s.private_header_files = 'Phaedo/Classes/kiwi/**/*.h'
+  s.public_header_files = 'Source/kiwi-objc/**/*.h'
+  s.private_header_files = 'Source/kiwi/**/*.h'
 
   s.library = 'c++'
   s.xcconfig = {

@@ -1,0 +1,1062 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841059881DB2031A00F0389E /* Phaedo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410597E1DB2031A00F0389E /* Phaedo.framework */; };
+		8410598F1DB2031A00F0389E /* Phaedo.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059811DB2031A00F0389E /* Phaedo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059A41DB2033E00F0389E /* Phaedo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410599B1DB2033D00F0389E /* Phaedo.framework */; };
+		841059D21DB2058D00F0389E /* AssocVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B41DB2058D00F0389E /* AssocVector.h */; };
+		841059D31DB2058D00F0389E /* constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B51DB2058D00F0389E /* constraint.h */; };
+		841059D41DB2058D00F0389E /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B61DB2058D00F0389E /* debug.h */; };
+		841059D51DB2058D00F0389E /* errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B71DB2058D00F0389E /* errors.h */; };
+		841059D61DB2058D00F0389E /* expression.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B81DB2058D00F0389E /* expression.h */; };
+		841059D71DB2058D00F0389E /* kiwi.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B91DB2058D00F0389E /* kiwi.h */; };
+		841059D81DB2058D00F0389E /* maptype.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BA1DB2058D00F0389E /* maptype.h */; };
+		841059D91DB2058D00F0389E /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BB1DB2058D00F0389E /* row.h */; };
+		841059DA1DB2058D00F0389E /* shareddata.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BC1DB2058D00F0389E /* shareddata.h */; };
+		841059DB1DB2058D00F0389E /* solver.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BD1DB2058D00F0389E /* solver.h */; };
+		841059DC1DB2058D00F0389E /* solverimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BE1DB2058D00F0389E /* solverimpl.h */; };
+		841059DD1DB2058D00F0389E /* strength.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BF1DB2058D00F0389E /* strength.h */; };
+		841059DE1DB2058D00F0389E /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C01DB2058D00F0389E /* symbol.h */; };
+		841059DF1DB2058D00F0389E /* symbolics.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C11DB2058D00F0389E /* symbolics.h */; };
+		841059E01DB2058D00F0389E /* term.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C21DB2058D00F0389E /* term.h */; };
+		841059E11DB2058D00F0389E /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C31DB2058D00F0389E /* util.h */; };
+		841059E21DB2058D00F0389E /* variable.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C41DB2058D00F0389E /* variable.h */; };
+		841059E31DB2058D00F0389E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C51DB2058D00F0389E /* version.h */; };
+		841059E41DB2058D00F0389E /* Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C71DB2058D00F0389E /* Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059E51DB2058D00F0389E /* Constraint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059C81DB2058D00F0389E /* Constraint.mm */; };
+		841059E61DB2058D00F0389E /* Expression.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C91DB2058D00F0389E /* Expression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059E71DB2058D00F0389E /* Expression.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CA1DB2058D00F0389E /* Expression.mm */; };
+		841059E81DB2058D00F0389E /* Solver.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CB1DB2058D00F0389E /* Solver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059E91DB2058D00F0389E /* Solver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CC1DB2058D00F0389E /* Solver.mm */; };
+		841059EA1DB2058D00F0389E /* Term.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CD1DB2058D00F0389E /* Term.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059EB1DB2058D00F0389E /* Term.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CE1DB2058D00F0389E /* Term.mm */; };
+		841059EC1DB2058D00F0389E /* Variable.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CF1DB2058D00F0389E /* Variable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059ED1DB2058D00F0389E /* Variable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059D01DB2058D00F0389E /* Variable.mm */; };
+		841059EE1DB2058D00F0389E /* Symbolics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841059D11DB2058D00F0389E /* Symbolics.swift */; };
+		841059F31DB2074000F0389E /* Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C71DB2058D00F0389E /* Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059F41DB2074000F0389E /* Expression.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C91DB2058D00F0389E /* Expression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059F51DB2074000F0389E /* Solver.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CB1DB2058D00F0389E /* Solver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059F61DB2074000F0389E /* Term.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CD1DB2058D00F0389E /* Term.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059F71DB2074000F0389E /* Variable.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059CF1DB2058D00F0389E /* Variable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841059F81DB2086600F0389E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841059F11DB2069A00F0389E /* Tests.swift */; };
+		841059F91DB2086800F0389E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841059F11DB2069A00F0389E /* Tests.swift */; };
+		84105A5A1DB20E6900F0389E /* Symbolics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841059D11DB2058D00F0389E /* Symbolics.swift */; };
+		84105A5B1DB20E6D00F0389E /* Phaedo.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059811DB2031A00F0389E /* Phaedo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84105A5C1DB20E9A00F0389E /* AssocVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B41DB2058D00F0389E /* AssocVector.h */; };
+		84105A5D1DB20E9A00F0389E /* constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B51DB2058D00F0389E /* constraint.h */; };
+		84105A5E1DB20E9A00F0389E /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B61DB2058D00F0389E /* debug.h */; };
+		84105A5F1DB20E9A00F0389E /* errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B71DB2058D00F0389E /* errors.h */; };
+		84105A601DB20E9A00F0389E /* expression.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B81DB2058D00F0389E /* expression.h */; };
+		84105A611DB20E9A00F0389E /* kiwi.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059B91DB2058D00F0389E /* kiwi.h */; };
+		84105A621DB20E9A00F0389E /* maptype.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BA1DB2058D00F0389E /* maptype.h */; };
+		84105A631DB20E9A00F0389E /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BB1DB2058D00F0389E /* row.h */; };
+		84105A641DB20E9A00F0389E /* shareddata.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BC1DB2058D00F0389E /* shareddata.h */; };
+		84105A651DB20E9A00F0389E /* solver.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BD1DB2058D00F0389E /* solver.h */; };
+		84105A661DB20E9A00F0389E /* solverimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BE1DB2058D00F0389E /* solverimpl.h */; };
+		84105A671DB20E9A00F0389E /* strength.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059BF1DB2058D00F0389E /* strength.h */; };
+		84105A681DB20E9A00F0389E /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C01DB2058D00F0389E /* symbol.h */; };
+		84105A691DB20E9A00F0389E /* symbolics.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C11DB2058D00F0389E /* symbolics.h */; };
+		84105A6A1DB20E9A00F0389E /* term.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C21DB2058D00F0389E /* term.h */; };
+		84105A6B1DB20E9A00F0389E /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C31DB2058D00F0389E /* util.h */; };
+		84105A6C1DB20E9A00F0389E /* variable.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C41DB2058D00F0389E /* variable.h */; };
+		84105A6D1DB20E9A00F0389E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 841059C51DB2058D00F0389E /* version.h */; };
+		84105A6E1DB2107400F0389E /* Constraint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059C81DB2058D00F0389E /* Constraint.mm */; };
+		84105A6F1DB2107700F0389E /* Expression.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CA1DB2058D00F0389E /* Expression.mm */; };
+		84105A701DB2107A00F0389E /* Solver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CC1DB2058D00F0389E /* Solver.mm */; };
+		84105A711DB2107D00F0389E /* Term.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059CE1DB2058D00F0389E /* Term.mm */; };
+		84105A721DB2108000F0389E /* Variable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 841059D01DB2058D00F0389E /* Variable.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841059891DB2031A00F0389E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841059731DB202B400F0389E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8410597D1DB2031A00F0389E;
+			remoteInfo = "Phaedo iOS";
+		};
+		841059A51DB2033E00F0389E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841059731DB202B400F0389E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8410599A1DB2033D00F0389E;
+			remoteInfo = "Phaedo macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8410597E1DB2031A00F0389E /* Phaedo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Phaedo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841059811DB2031A00F0389E /* Phaedo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Phaedo.h; path = Source/Phaedo.h; sourceTree = "<group>"; };
+		841059821DB2031A00F0389E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		841059871DB2031A00F0389E /* Phaedo iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phaedo iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8410598E1DB2031A00F0389E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		8410599B1DB2033D00F0389E /* Phaedo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Phaedo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841059A31DB2033E00F0389E /* Phaedo macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phaedo macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841059B41DB2058D00F0389E /* AssocVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssocVector.h; sourceTree = "<group>"; };
+		841059B51DB2058D00F0389E /* constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraint.h; sourceTree = "<group>"; };
+		841059B61DB2058D00F0389E /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		841059B71DB2058D00F0389E /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
+		841059B81DB2058D00F0389E /* expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expression.h; sourceTree = "<group>"; };
+		841059B91DB2058D00F0389E /* kiwi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiwi.h; sourceTree = "<group>"; };
+		841059BA1DB2058D00F0389E /* maptype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maptype.h; sourceTree = "<group>"; };
+		841059BB1DB2058D00F0389E /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		841059BC1DB2058D00F0389E /* shareddata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareddata.h; sourceTree = "<group>"; };
+		841059BD1DB2058D00F0389E /* solver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solver.h; sourceTree = "<group>"; };
+		841059BE1DB2058D00F0389E /* solverimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solverimpl.h; sourceTree = "<group>"; };
+		841059BF1DB2058D00F0389E /* strength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strength.h; sourceTree = "<group>"; };
+		841059C01DB2058D00F0389E /* symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbol.h; sourceTree = "<group>"; };
+		841059C11DB2058D00F0389E /* symbolics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbolics.h; sourceTree = "<group>"; };
+		841059C21DB2058D00F0389E /* term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = term.h; sourceTree = "<group>"; };
+		841059C31DB2058D00F0389E /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		841059C41DB2058D00F0389E /* variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variable.h; sourceTree = "<group>"; };
+		841059C51DB2058D00F0389E /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		841059C71DB2058D00F0389E /* Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constraint.h; sourceTree = "<group>"; };
+		841059C81DB2058D00F0389E /* Constraint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Constraint.mm; sourceTree = "<group>"; };
+		841059C91DB2058D00F0389E /* Expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
+		841059CA1DB2058D00F0389E /* Expression.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Expression.mm; sourceTree = "<group>"; };
+		841059CB1DB2058D00F0389E /* Solver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solver.h; sourceTree = "<group>"; };
+		841059CC1DB2058D00F0389E /* Solver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Solver.mm; sourceTree = "<group>"; };
+		841059CD1DB2058D00F0389E /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
+		841059CE1DB2058D00F0389E /* Term.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Term.mm; sourceTree = "<group>"; };
+		841059CF1DB2058D00F0389E /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+		841059D01DB2058D00F0389E /* Variable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Variable.mm; sourceTree = "<group>"; };
+		841059D11DB2058D00F0389E /* Symbolics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Symbolics.swift; path = Source/Symbolics.swift; sourceTree = "<group>"; };
+		841059F11DB2069A00F0389E /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tests.swift; path = Tests/Tests.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8410597A1DB2031A00F0389E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059841DB2031A00F0389E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059881DB2031A00F0389E /* Phaedo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059971DB2033D00F0389E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059A01DB2033E00F0389E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059A41DB2033E00F0389E /* Phaedo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841059721DB202B400F0389E = {
+			isa = PBXGroup;
+			children = (
+				841059B21DB2056D00F0389E /* Source */,
+				8410598B1DB2031A00F0389E /* Tests */,
+				8410597F1DB2031A00F0389E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8410597F1DB2031A00F0389E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8410597E1DB2031A00F0389E /* Phaedo.framework */,
+				841059871DB2031A00F0389E /* Phaedo iOS Tests.xctest */,
+				8410599B1DB2033D00F0389E /* Phaedo.framework */,
+				841059A31DB2033E00F0389E /* Phaedo macOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8410598B1DB2031A00F0389E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				841059F11DB2069A00F0389E /* Tests.swift */,
+				841059F01DB2065E00F0389E /* Supporting Files */,
+			);
+			name = Tests;
+			path = "Phaedo iOSTests";
+			sourceTree = "<group>";
+		};
+		841059B21DB2056D00F0389E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				841059B31DB2058D00F0389E /* kiwi */,
+				841059C61DB2058D00F0389E /* kiwi-objc */,
+				841059EF1DB205EF00F0389E /* Supporting Files */,
+				841059D11DB2058D00F0389E /* Symbolics.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		841059B31DB2058D00F0389E /* kiwi */ = {
+			isa = PBXGroup;
+			children = (
+				841059B41DB2058D00F0389E /* AssocVector.h */,
+				841059B51DB2058D00F0389E /* constraint.h */,
+				841059B61DB2058D00F0389E /* debug.h */,
+				841059B71DB2058D00F0389E /* errors.h */,
+				841059B81DB2058D00F0389E /* expression.h */,
+				841059B91DB2058D00F0389E /* kiwi.h */,
+				841059BA1DB2058D00F0389E /* maptype.h */,
+				841059BB1DB2058D00F0389E /* row.h */,
+				841059BC1DB2058D00F0389E /* shareddata.h */,
+				841059BD1DB2058D00F0389E /* solver.h */,
+				841059BE1DB2058D00F0389E /* solverimpl.h */,
+				841059BF1DB2058D00F0389E /* strength.h */,
+				841059C01DB2058D00F0389E /* symbol.h */,
+				841059C11DB2058D00F0389E /* symbolics.h */,
+				841059C21DB2058D00F0389E /* term.h */,
+				841059C31DB2058D00F0389E /* util.h */,
+				841059C41DB2058D00F0389E /* variable.h */,
+				841059C51DB2058D00F0389E /* version.h */,
+			);
+			name = kiwi;
+			path = Source/kiwi;
+			sourceTree = "<group>";
+		};
+		841059C61DB2058D00F0389E /* kiwi-objc */ = {
+			isa = PBXGroup;
+			children = (
+				841059C71DB2058D00F0389E /* Constraint.h */,
+				841059C81DB2058D00F0389E /* Constraint.mm */,
+				841059C91DB2058D00F0389E /* Expression.h */,
+				841059CA1DB2058D00F0389E /* Expression.mm */,
+				841059CB1DB2058D00F0389E /* Solver.h */,
+				841059CC1DB2058D00F0389E /* Solver.mm */,
+				841059CD1DB2058D00F0389E /* Term.h */,
+				841059CE1DB2058D00F0389E /* Term.mm */,
+				841059CF1DB2058D00F0389E /* Variable.h */,
+				841059D01DB2058D00F0389E /* Variable.mm */,
+			);
+			name = "kiwi-objc";
+			path = "Source/kiwi-objc";
+			sourceTree = "<group>";
+		};
+		841059EF1DB205EF00F0389E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841059811DB2031A00F0389E /* Phaedo.h */,
+				841059821DB2031A00F0389E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841059F01DB2065E00F0389E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8410598E1DB2031A00F0389E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8410597B1DB2031A00F0389E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059EA1DB2058D00F0389E /* Term.h in Headers */,
+				841059D91DB2058D00F0389E /* row.h in Headers */,
+				841059DA1DB2058D00F0389E /* shareddata.h in Headers */,
+				841059D61DB2058D00F0389E /* expression.h in Headers */,
+				841059E11DB2058D00F0389E /* util.h in Headers */,
+				841059E21DB2058D00F0389E /* variable.h in Headers */,
+				841059E61DB2058D00F0389E /* Expression.h in Headers */,
+				841059DC1DB2058D00F0389E /* solverimpl.h in Headers */,
+				841059E01DB2058D00F0389E /* term.h in Headers */,
+				841059E41DB2058D00F0389E /* Constraint.h in Headers */,
+				841059DD1DB2058D00F0389E /* strength.h in Headers */,
+				841059D41DB2058D00F0389E /* debug.h in Headers */,
+				841059DB1DB2058D00F0389E /* solver.h in Headers */,
+				8410598F1DB2031A00F0389E /* Phaedo.h in Headers */,
+				841059EC1DB2058D00F0389E /* Variable.h in Headers */,
+				841059D71DB2058D00F0389E /* kiwi.h in Headers */,
+				841059D31DB2058D00F0389E /* constraint.h in Headers */,
+				841059DE1DB2058D00F0389E /* symbol.h in Headers */,
+				841059D21DB2058D00F0389E /* AssocVector.h in Headers */,
+				841059E81DB2058D00F0389E /* Solver.h in Headers */,
+				841059D51DB2058D00F0389E /* errors.h in Headers */,
+				841059E31DB2058D00F0389E /* version.h in Headers */,
+				841059D81DB2058D00F0389E /* maptype.h in Headers */,
+				841059DF1DB2058D00F0389E /* symbolics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059981DB2033D00F0389E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84105A611DB20E9A00F0389E /* kiwi.h in Headers */,
+				84105A641DB20E9A00F0389E /* shareddata.h in Headers */,
+				84105A5E1DB20E9A00F0389E /* debug.h in Headers */,
+				841059F61DB2074000F0389E /* Term.h in Headers */,
+				84105A631DB20E9A00F0389E /* row.h in Headers */,
+				84105A5C1DB20E9A00F0389E /* AssocVector.h in Headers */,
+				84105A681DB20E9A00F0389E /* symbol.h in Headers */,
+				84105A621DB20E9A00F0389E /* maptype.h in Headers */,
+				841059F51DB2074000F0389E /* Solver.h in Headers */,
+				841059F71DB2074000F0389E /* Variable.h in Headers */,
+				84105A651DB20E9A00F0389E /* solver.h in Headers */,
+				84105A601DB20E9A00F0389E /* expression.h in Headers */,
+				841059F41DB2074000F0389E /* Expression.h in Headers */,
+				84105A6D1DB20E9A00F0389E /* version.h in Headers */,
+				84105A6A1DB20E9A00F0389E /* term.h in Headers */,
+				84105A6B1DB20E9A00F0389E /* util.h in Headers */,
+				841059F31DB2074000F0389E /* Constraint.h in Headers */,
+				84105A691DB20E9A00F0389E /* symbolics.h in Headers */,
+				84105A671DB20E9A00F0389E /* strength.h in Headers */,
+				84105A6C1DB20E9A00F0389E /* variable.h in Headers */,
+				84105A661DB20E9A00F0389E /* solverimpl.h in Headers */,
+				84105A5B1DB20E6D00F0389E /* Phaedo.h in Headers */,
+				84105A5D1DB20E9A00F0389E /* constraint.h in Headers */,
+				84105A5F1DB20E9A00F0389E /* errors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8410597D1DB2031A00F0389E /* Phaedo iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841059941DB2031A00F0389E /* Build configuration list for PBXNativeTarget "Phaedo iOS" */;
+			buildPhases = (
+				841059791DB2031A00F0389E /* Sources */,
+				8410597A1DB2031A00F0389E /* Frameworks */,
+				8410597B1DB2031A00F0389E /* Headers */,
+				8410597C1DB2031A00F0389E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phaedo iOS";
+			productName = "Phaedo iOS";
+			productReference = 8410597E1DB2031A00F0389E /* Phaedo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		841059861DB2031A00F0389E /* Phaedo iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841059951DB2031A00F0389E /* Build configuration list for PBXNativeTarget "Phaedo iOS Tests" */;
+			buildPhases = (
+				841059831DB2031A00F0389E /* Sources */,
+				841059841DB2031A00F0389E /* Frameworks */,
+				841059851DB2031A00F0389E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8410598A1DB2031A00F0389E /* PBXTargetDependency */,
+			);
+			name = "Phaedo iOS Tests";
+			productName = "Phaedo iOSTests";
+			productReference = 841059871DB2031A00F0389E /* Phaedo iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8410599A1DB2033D00F0389E /* Phaedo macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841059AC1DB2033E00F0389E /* Build configuration list for PBXNativeTarget "Phaedo macOS" */;
+			buildPhases = (
+				841059961DB2033D00F0389E /* Sources */,
+				841059971DB2033D00F0389E /* Frameworks */,
+				841059981DB2033D00F0389E /* Headers */,
+				841059991DB2033D00F0389E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phaedo macOS";
+			productName = "Phaedo macOS";
+			productReference = 8410599B1DB2033D00F0389E /* Phaedo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		841059A21DB2033E00F0389E /* Phaedo macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841059AF1DB2033E00F0389E /* Build configuration list for PBXNativeTarget "Phaedo macOS Tests" */;
+			buildPhases = (
+				8410599F1DB2033E00F0389E /* Sources */,
+				841059A01DB2033E00F0389E /* Frameworks */,
+				841059A11DB2033E00F0389E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841059A61DB2033E00F0389E /* PBXTargetDependency */,
+			);
+			name = "Phaedo macOS Tests";
+			productName = "Phaedo macOSTests";
+			productReference = 841059A31DB2033E00F0389E /* Phaedo macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841059731DB202B400F0389E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					8410597D1DB2031A00F0389E = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					841059861DB2031A00F0389E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					8410599A1DB2033D00F0389E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					841059A21DB2033E00F0389E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 841059761DB202B400F0389E /* Build configuration list for PBXProject "Phaedo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 841059721DB202B400F0389E;
+			productRefGroup = 8410597F1DB2031A00F0389E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8410597D1DB2031A00F0389E /* Phaedo iOS */,
+				841059861DB2031A00F0389E /* Phaedo iOS Tests */,
+				8410599A1DB2033D00F0389E /* Phaedo macOS */,
+				841059A21DB2033E00F0389E /* Phaedo macOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8410597C1DB2031A00F0389E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059851DB2031A00F0389E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059991DB2033D00F0389E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059A11DB2033E00F0389E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841059791DB2031A00F0389E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059ED1DB2058D00F0389E /* Variable.mm in Sources */,
+				841059E51DB2058D00F0389E /* Constraint.mm in Sources */,
+				841059E71DB2058D00F0389E /* Expression.mm in Sources */,
+				841059E91DB2058D00F0389E /* Solver.mm in Sources */,
+				841059EB1DB2058D00F0389E /* Term.mm in Sources */,
+				841059EE1DB2058D00F0389E /* Symbolics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059831DB2031A00F0389E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059F81DB2086600F0389E /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841059961DB2033D00F0389E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84105A711DB2107D00F0389E /* Term.mm in Sources */,
+				84105A701DB2107A00F0389E /* Solver.mm in Sources */,
+				84105A6E1DB2107400F0389E /* Constraint.mm in Sources */,
+				84105A721DB2108000F0389E /* Variable.mm in Sources */,
+				84105A6F1DB2107700F0389E /* Expression.mm in Sources */,
+				84105A5A1DB20E6900F0389E /* Symbolics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8410599F1DB2033E00F0389E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841059F91DB2086800F0389E /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8410598A1DB2031A00F0389E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8410597D1DB2031A00F0389E /* Phaedo iOS */;
+			targetProxy = 841059891DB2031A00F0389E /* PBXContainerItemProxy */;
+		};
+		841059A61DB2033E00F0389E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8410599A1DB2033D00F0389E /* Phaedo macOS */;
+			targetProxy = 841059A51DB2033E00F0389E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		841059771DB202B400F0389E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		841059781DB202B400F0389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		841059901DB2031A00F0389E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-iOS";
+				PRODUCT_NAME = Phaedo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		841059911DB2031A00F0389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-iOS";
+				PRODUCT_NAME = Phaedo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		841059921DB2031A00F0389E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		841059931DB2031A00F0389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841059AD1DB2033E00F0389E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-macOS";
+				PRODUCT_NAME = Phaedo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		841059AE1DB2033E00F0389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-macOS";
+				PRODUCT_NAME = Phaedo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		841059B01DB2033E00F0389E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		841059B11DB2033E00F0389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.formidable.Phaedo-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841059761DB202B400F0389E /* Build configuration list for PBXProject "Phaedo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841059771DB202B400F0389E /* Debug */,
+				841059781DB202B400F0389E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841059941DB2031A00F0389E /* Build configuration list for PBXNativeTarget "Phaedo iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841059901DB2031A00F0389E /* Debug */,
+				841059911DB2031A00F0389E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841059951DB2031A00F0389E /* Build configuration list for PBXNativeTarget "Phaedo iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841059921DB2031A00F0389E /* Debug */,
+				841059931DB2031A00F0389E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841059AC1DB2033E00F0389E /* Build configuration list for PBXNativeTarget "Phaedo macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841059AD1DB2033E00F0389E /* Debug */,
+				841059AE1DB2033E00F0389E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841059AF1DB2033E00F0389E /* Build configuration list for PBXNativeTarget "Phaedo macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841059B01DB2033E00F0389E /* Debug */,
+				841059B11DB2033E00F0389E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841059731DB202B400F0389E /* Project object */;
+}
